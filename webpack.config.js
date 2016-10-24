@@ -1,12 +1,12 @@
 module.exports = {
 	entry: [
 		  'webpack-dev-server/client?http://localhost:8080'
-		, './src/index.js'
+		, './src/index.jsx'
 	]
 	, module: {
 		loaders: [
 			{
-				test: /\.js/
+				test: /\.jsx?$/
 				, exclude: /node_modules/
 				, loader: 'babel'
 			}
